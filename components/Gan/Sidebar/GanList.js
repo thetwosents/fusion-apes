@@ -27,7 +27,7 @@ const GanList = () => {
                             cover={<img style={{height: 150}} alt="example" src={gan.image} />}
                             onClick={() => onClick(gan)}
                         >
-                            <Card.Meta title={gan.name} />
+                            <Card.Meta title={gan.name}  />
                         </Card>
                     </Col>
                 ))}

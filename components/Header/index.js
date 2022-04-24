@@ -1,7 +1,20 @@
+import Container from '../Container';
+import {Row, Col} from 'antd';
+import NavMenu from './menu';
+
 const Header = () => {
     return (
         <header>
-            <h1>Header</h1>
+            <Container>
+                <Row>
+                    <Col span={8}>
+
+                    </Col>
+                    <Col span={16}>
+                        <NavMenu />
+                    </Col>
+                </Row>
+            </Container>
         </header>
     )
 }
