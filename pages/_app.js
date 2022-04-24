@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'antd/dist/antd.css';
 import Web3Provider from '../utils/web3';
 import {
   RecoilRoot,
