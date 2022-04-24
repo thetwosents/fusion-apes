@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Row, Col, Card } from 'antd';
 import gans from './gans';
 
@@ -24,7 +25,7 @@ const GanList = () => {
                         <Card
                             hoverable
                             style={{ width: '100%' }}
-                            cover={<img style={{height: 150}} alt="example" src={gan.image} />}
+                            cover={<Image src={gan.image} alt={gan.name} layout="fill" />}
                             onClick={() => onClick(gan)}
                         >
                             <Card.Meta title={gan.name}  />

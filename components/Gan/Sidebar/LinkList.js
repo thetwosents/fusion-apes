@@ -7,7 +7,7 @@ const LinkList = () => {
             {
                 links.map(link => {
                     return (
-                        <Link href={link.href}>
+                        <Link href={link.href} key={link.title}>
                             <a>{link.title}</a>
                         </Link>
                     )
